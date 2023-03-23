@@ -1,0 +1,145 @@
+*{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    color: #ffffff;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+p{
+    line-height: 30px;
+}
+
+.button-orange{
+    background-color: yellow;
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+body{
+    background-color: black;
+
+    main{
+        .img--wrapper{
+            background:  linear-gradient(to bottom, transparent calc(50% - 30px), 
+            transparent calc(50% + 30px), black calc(70% + 160px), black 100%),
+            url(../images/bailey-zindel-NRQV-hBF10M-unsplash.jpg) no-repeat top center;
+            background-size: 100%;;
+            header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .header--logo{
+                    display: flex;
+                    align-items: center;
+                    background-color: yellow;
+                    padding: 0% 3% 0% 4%;
+                    width: 17.9%;
+                    height: 115px;
+                    h4{
+                        
+                        color: black;
+                    }
+                }
+                .header--top_left_nav{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 25%;
+                    padding: 0% 6.9% 0% 0%;
+                    h1{
+                        margin: 0px 9.4%;
+                        font-weight: bold;
+                    }
+                    div{
+                        width: 40px;
+                        height: 40px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .top-section{
+                display: flex;
+                .left-menu{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: center;
+
+                    width: 18.7%;
+                    min-width: 319px;
+                    padding-top: 2.5%;
+                    padding-bottom: 25%;
+                    
+                    background-color: rgba(0,0,0,0.5);
+                    opacity: 0.8;
+                    
+                    h3{
+                        margin: 17% 0% 0% 22%; 
+                        font-weight: 900;
+                        transition: 0.5s;
+                    }
+                    h3:hover{
+                        cursor: pointer;
+                        color: yellow;
+                        font-size: 25px;
+                        transition: 0.5s;
+                    }
+                }
+                .on_top_of_image{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 13.4% 0% 0% 9.5%;
+                    width: 80%;
+                    div{
+                        width: 37%;
+                        p{
+                            width: 75%;
+                            margin-top: 7.6%;
+                        }
+                        button{
+                            margin-top: 8.3%;
+                            margin-left: 1.5%;
+                        }
+                    }
+                }
+            }
+        }
+        .featured-spots{
+            height: 1000px;
+        }
+        
+        
+    }
+
+    footer{
+
+    }
+}
