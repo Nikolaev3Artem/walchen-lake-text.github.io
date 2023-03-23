@@ -2,8 +2,18 @@
     font-family: sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6, p{
+h1,h2,h3,h4,h5,h6, p, span{
     color: #ffffff;
+}
+
+h6{
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 80px;
+    font-weight: bold;
 }
 
 h4{
@@ -20,23 +30,95 @@ h2{
     font-weight: bold;
 }
 
-h6{
-    font-size: 80px;
-    font-weight: bold;
-}
-
 p{
     line-height: 30px;
 }
 
+span{
+    font-size: 30px;
+}
+
+img{
+    height: fit-content;
+}
+
+.cursive{
+    font-style: italic;
+}
+.cursive::before, .cursive::after{
+    content: ' " ';
+}
+
+
 .button-orange{
-    background-color: yellow;
+    background-color: black;
+    border-color: yellow;
+    color: yellow;
     width: 170px;
     height: 50px;
     border-radius: 100px;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+
+    transition: 0.4s;
+}
+
+.button-with-opasity{
+    background-color: rgba(0,0,0,0);
+    border-color: yellow;
+    color: yellow;
+
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.4s;
+}
+
+.button-with-opasity:hover{
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+
+    transition: 0.4s;
+}
+
+.button-orange:hover{
+    background-color: yellow;
+    color: black;
+
+    transition: 0.4s;
+}
+
+.lineR,.lineMiddle, .lineL{
+    display: inline-block;
+    height: 0;
+    border: 1px solid #a5a5a5;
+    margin: 0px 10px;
+}
+
+.gallery-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+    margin-top: 100px;
+    margin-left: 6%;
+    .lineR{
+        margin-bottom: 5px;
+        width: 5%;
+        margin: 0% 1.5%;
+    }
+    .lineMiddle{
+        margin-bottom: 5px;
+        width: 50%;
+        margin: 0% 1.5%;
+    }
 }
 
 
@@ -110,17 +192,18 @@ body{
                         cursor: pointer;
                         color: yellow;
                         font-size: 25px;
+                        margin: 15.5% 0% 0% 21%;
                         transition: 0.5s;
                     }
                 }
-                .on_top_of_image{
+                .top-section--gallery{
                     display: flex;
                     flex-direction: column;
                     padding: 13.4% 0% 0% 9.5%;
                     width: 80%;
                     div{
                         width: 37%;
-                        p{
+                        .gallery--desc{
                             width: 75%;
                             margin-top: 7.6%;
                         }
@@ -129,11 +212,127 @@ body{
                             margin-left: 1.5%;
                         }
                     }
+                    .gallery-nav{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90%;
+
+                        margin-top: 100px;
+                        .gallery-nav--button{
+                            width: 50px;
+                            height: 50px;
+                            margin: 0% 0.3%;
+                            border-radius: 150px;
+                            .right{
+                                transform: rotate(90deg);
+                            }
+                            .left{
+                                transform: rotate(270deg);
+                            }
+                        }
+                        .lineR{
+                            margin-bottom: 5px;
+                            width: 5%;
+                            margin: 0% 1.5%;
+                        }
+                        .lineMiddle{
+                            margin-bottom: 5px;
+                            width: 50%;
+                            margin: 0% 1.5%;
+                        }
+
+
+                    }
                 }
             }
         }
         .featured-spots{
-            height: 1000px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            width: 100%;
+            .featured-spots--text{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+
+                margin: 6% 0%;
+                .featured-spots--header{
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 125px;
+                    text-align: end;
+                }
+                .featured-spots--desc{
+                    width: 40%;
+                    text-align: end;
+                    margin: 5% 0%;
+                    font-weight: 900;
+                }
+                .featured-spots--view-all{
+                    display: flex;
+                    width: 100%;
+                    justify-content: end;
+                    margin-top: 20%;
+                    div{
+                        margin-top: 13px;
+                        width: 30%;
+                    }
+                }
+            }
+            .featured-spots--gallery{
+                width: 70%;
+                .gallery--blocks{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+    
+                    margin: 10% 5%;
+                    .gallery--block img{
+                        width: 100%;
+                        height: fit-content;
+                    }
+                    .gallery--block{
+                        width: 25%;
+                    }
+                    .gallery--block_text{
+                        display: flex;
+                        flex-direction: column;
+                        .gallery--block-header{
+                            margin-top: 15%;
+                        }
+                        .gallery--block-country{
+                            margin: 1.5% 0%;
+                            opacity: 0.8;
+                        }
+                        .gallery--block-desc{
+                            margin: 10% 0%;
+                        }
+                    }
+                }
+            }
+            
+
+        }
+        .above_the_sea{
+            display: flex;
+            margin-top: 300px;
+            .above_the_sea--image{
+                width: 50%;
+                padding: 0% 10% 10% 0%;
+            }
+            .above_the_sea--desc{
+                .above_the_sea--header{
+                    width: 50%;
+                }
+                .above_the_sea--text{
+                    width: 70%;
+                    margin: 10% 0%;
+                }
+
+            }
         }
         
         
