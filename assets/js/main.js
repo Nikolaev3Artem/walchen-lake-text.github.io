@@ -5,10 +5,10 @@ const right_button = document.querySelector(".right")
 const left_button = document.querySelector(".left")
 const images_value = document.querySelector(".images-value")
 const images = [
-    '/assets/images/top-section--bg1.jpg',
-    '/assets/images/top-section--bg2.jpg',
-    '/assets/images/top-section--bg3.jpg',
-    '/assets/images/top-section--bg4.jpg',
+    '/walchen-lake-text.github.io/assets/images/top-section--bg1.jpg',
+    '/walchen-lake-text.github.io/assets/images/top-section--bg2.jpg',
+    '/walchen-lake-text.github.io/assets/images/top-section--bg3.jpg',
+    '/walchen-lake-text.github.io/assets/images/top-section--bg4.jpg',
 ];
 
 let currentIndex = 0;
