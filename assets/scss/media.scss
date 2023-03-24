@@ -1,0 +1,72 @@
+@media(max-width:1025px){
+    body{
+        main{
+            .img--wrapper{
+                .top-section{
+                    .left-menu{
+                        width: 22.7%;
+                        h3{
+                            margin: 17% 0% 0% 0%;
+                        }
+                    }
+                    .top-section--gallery{
+                        div{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .featured-spots{
+                .featured-spots--text{
+                    .featured-spots--desc{
+                        width: 100%;
+                    }
+                }
+                .featured-spots--gallery{
+                    .gallery--blocks{
+                        margin: 10% 0%;
+                    }
+                }
+            }
+            .mountains{
+                .mountains--bg-wrapper{
+                    padding: 0% 10%;
+                    .mountains--desc{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:426px){
+    body{
+        main{
+            .featured-spots{
+                .featured-spots--gallery{
+                    .gallery--blocks{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .gallery--block{
+                            width: 100%;
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+            .editors-pick{
+                .editors-pick--text{
+                    .editors-pick--header{
+                        width: 100%;
+                    }
+                    .editors-pick--desc{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
