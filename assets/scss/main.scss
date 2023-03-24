@@ -123,16 +123,11 @@ img{
     }
 }
 
-
 body{
     background-color: rgba(40,39,42,1);
 
     main{
         .img--wrapper{
-            background:  linear-gradient(to bottom, transparent calc(50% - 30px), 
-            transparent calc(50% + 30px), rgba(40,39,42,1) calc(70% + 160px), rgba(40,39,42,1) 100%),
-            url(../images/top-section-bg.jpg) no-repeat top center;
-            background-size: 100%;
             header{
                 display: flex;
                 flex-direction: row;
