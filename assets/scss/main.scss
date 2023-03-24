@@ -258,7 +258,7 @@ body{
                 flex-direction: column;
                 align-items: end;
 
-                margin: 6% 0%;
+                margin: 6% 0% 0% 6%;
                 .featured-spots--header{
                     display: flex;
                     flex-wrap: wrap;
@@ -266,7 +266,6 @@ body{
                     text-align: end;
                 }
                 .featured-spots--desc{
-                    width: 40%;
                     text-align: end;
                     margin: 5% 0%;
                 }
@@ -286,9 +285,8 @@ body{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    width: 100%;
     
-                    margin: 10% 5%;
+                    margin: 10% 5% 0% 0%;
                     .gallery--block img{
                         width: 100%;
                         height: fit-content;
