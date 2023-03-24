@@ -310,7 +310,7 @@ body{
         }
         .above_the_sea{
             display: flex;
-            margin-top: 300px;
+            margin-top: 100px;
             .above_the_sea--image{
                 width: 50%;
                 padding: 0% 10% 10% 0%;
@@ -421,7 +421,7 @@ body{
 
         .mountains{
             width: 100%;
-            margin-top: 200px;
+            margin-top: 100px;
             .mountains--bg-wrapper{
                 display: flex;
                 flex-direction: column;
@@ -434,7 +434,7 @@ body{
                 padding: 0% 20%;
 
                 .mountains--desc{
-                    width: 30%;
+                    width: 50%;
                     margin-top: 60px;
                     margin-bottom: 150px;
                 }
@@ -518,10 +518,5 @@ body{
         }
         color: black;
         background-color: yellow;
-
-        img{
-           background-color: black;
-           border-radius: 50px;
-        }
     }
 }
