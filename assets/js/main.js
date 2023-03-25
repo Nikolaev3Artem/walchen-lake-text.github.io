@@ -39,18 +39,48 @@ left_button.addEventListener('click', () => {
     changeBackgroundImage();
 });
 
-function ReadMore() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("ReadMoreBtn");
+function ReadMore(BlockName) {
+  var WindowWidth = window.innerWidth;
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
+  var dots_desktop = document.getElementById(`${BlockName}-dots-desktop`);
+  var moreText_desktop = document.getElementById(`${BlockName}-more-desktop`);
+  var dots_tablet = document.getElementById(`${BlockName}-dots-tablet`);
+  var moreText_tablet = document.getElementById(`${BlockName}-more-tablet`);
+  var dots_mobile = document.getElementById(`${BlockName}-dots-mobile`);
+  var moreText_mobile = document.getElementById(`${BlockName}-more-mobile`);
+  var btnText = document.getElementById(`${BlockName}-ReadMoreBtn`);
+
+  if (dots_desktop.style.display === "none" || dots_tablet.style.display === "none" || dots_mobile.style.display === "none") {
     btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
+    if(WindowWidth >= 1024){
+      dots_desktop.style.display = "inline";
+      moreText_desktop.style.display = "none"
+    }
+    else if(425 >= WindowWidth <= 1024){
+      dots_tablet.style.display = "inline";
+      moreText_tablet.style.display = "none";
+    }
+    else{
+      dots_mobile.style.display = "inline";
+      moreText_mobile.style.display = "none";
+    }
+
+
+  } else{
     btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+
+    if(WindowWidth >= 1024){
+      dots_desktop.style.display = "none";
+      moreText_desktop.style.display = "inline";
+    }
+    else if(425 >= WindowWidth <= 1024){
+      dots_tablet.style.display = "none";
+      moreText_tablet.style.display = "inline";
+    }
+    else{
+      dots_mobile.style.display = "none";
+      moreText_mobile.style.display = "inline";
+    }   
+
   }
 }
