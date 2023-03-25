@@ -38,3 +38,19 @@ left_button.addEventListener('click', () => {
     images_value.innerHTML = currentIndex+1 + "/" +  images.length
     changeBackgroundImage();
 });
+
+function ReadMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("ReadMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}

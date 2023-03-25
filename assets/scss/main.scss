@@ -79,21 +79,24 @@ img{
 
     transition: 0.4s;
 }
+@media(min-width:769px){
+    .button-with-opasity:hover{
+        background-color: yellow;
+        border-color: rgba(0,0,0,0);
+        color: black;
 
-.button-with-opasity:hover{
-    background-color: yellow;
-    border-color: rgba(0,0,0,0);
-    color: black;
-
-    transition: 0.4s;
+        transition: 0.4s;
+    }
 }
 
-.button-orange:hover{
-    background-color: yellow;
-    border-color: rgba(0,0,0,0);
-    color: black;
+@media(min-width:769px){
+    .button-orange:hover{
+        background-color: yellow;
+        border-color: rgba(0,0,0,0);
+        color: black;
 
-    transition: 0.4s;
+        transition: 0.4s;
+    }
 }
 
 .lineR,.lineMiddle, .lineL{
@@ -121,6 +124,10 @@ img{
         width: 50%;
         margin: 0% 1.5%;
     }
+}
+
+#more {
+    display: none;
 }
 
 body{
@@ -175,7 +182,7 @@ body{
                     width: 18.7%;
                     padding-top: 2.5%;
                     padding-bottom: 25%;
-                    
+                    height: 100%;
                     background-color: rgba(0,0,0,0.5);
                     opacity: 0.8;
                     
@@ -184,12 +191,14 @@ body{
                         font-weight: 900;
                         transition: 0.5s;
                     }
-                    h3:hover{
-                        cursor: pointer;
-                        color: yellow;
-                        font-size: 25px;
-                        margin: 15.5% 0% 0% 21%;
-                        transition: 0.5s;
+                    @media(min-width:769px){
+                        h3:hover{
+                            cursor: pointer;
+                            color: yellow;
+                            font-size: 25px;
+                            margin: 15.5% 0% 0% 21%;
+                            transition: 0.5s;
+                        }
                     }
                 }
                 .top-section--gallery{
@@ -513,8 +522,15 @@ body{
             color: black;
         }
         p{
+            display: flex;
+            align-items: center;
+            
             color: black;
             font-weight: bold;
+
+            img{
+                margin-right: 10px;
+            }
         }
         color: black;
         background-color: yellow;
