@@ -112,12 +112,31 @@
                         }
                     }
                 }
+
                 .top-section{
                     .left-menu{
                         display: none;
                     }
                     .top-section--gallery{
                         padding: 0% 0% 0% 18.5%;
+                    }
+                }
+            }
+            .featured-spots{
+                display: flex;
+                flex-direction: column;
+                .featured-spots--text,{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .featured-spots--desc,.featured-spots--header{
+                        text-align: center;
+                        width: 70%;
+                    }
+                    .featured-spots--view-all{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 0px;
                     }
                 }
             }

@@ -123,18 +123,36 @@ img{
     }
 }
 
-#above_the_sea-more-desktop, #featured-spots--block1-more-desktop, #featured-spots--block2-more-desktop,#featured-spots--block3-more-desktop{
+#above_the_sea-more-desktop, 
+#featured-spots--block1-more-desktop, 
+#featured-spots--block2-more-desktop,
+#featured-spots--block3-more-desktop,
+#mountains-block1-more-desktop,
+#mountains-block2-more-desktop,
+#mountains-block3-more-desktop{
     display: none;
 }
 
 @media(max-width:1025px){
-    #above_the_sea-more-tablet, #featured-spots--block1-more-tablet,#featured-spots--block2-more-tablet,#featured-spots--block3-more-tablet {
+    #above_the_sea-more-tablet, 
+    #featured-spots--block1-more-tablet,
+    #featured-spots--block2-more-tablet,
+    #featured-spots--block3-more-tablet,
+    #mountains-block1-more-tablet,
+    #mountains-block2-more-tablet,
+    #mountains-block3-more-tablet {
         display: none;
     }
 }
 
 @media(max-width:426px){
-    #above_the_sea-more-mobile, #featured-spots--block1-more-mobile,#featured-spots--block2-more-mobile,#featured-spots--block3-more-mobile {
+    #above_the_sea-more-mobile, 
+    #featured-spots--block1-more-mobile,
+    #featured-spots--block2-more-mobile,
+    #featured-spots--block3-more-mobile,
+    #mountains-block1-more-mobile,
+    #mountains-block2-more-mobile,
+    #mountains-block3-more-mobile {
         display: none;
     }
 }

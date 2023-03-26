@@ -52,15 +52,17 @@ function ReadMore(BlockName) {
 
   if (dots_desktop.style.display === "none" || dots_tablet.style.display === "none" || dots_mobile.style.display === "none") {
     btnText.innerHTML = "Read more";
+    dots_desktop.style.display = "inline";
+    moreText_desktop.style.display = "none"
     if(WindowWidth >= 1024){
       dots_desktop.style.display = "inline";
       moreText_desktop.style.display = "none"
     }
-    else if(425 >= WindowWidth <= 1024){
+    else if(WindowWidth >= 426){
       dots_tablet.style.display = "inline";
       moreText_tablet.style.display = "none";
     }
-    else{
+    else if(WindowWidth <= 426){
       dots_mobile.style.display = "inline";
       moreText_mobile.style.display = "none";
     }
@@ -71,15 +73,21 @@ function ReadMore(BlockName) {
 
     if(WindowWidth >= 1024){
       dots_desktop.style.display = "none";
+      moreText_mobile.style.display = "inline";
+      moreText_tablet.style.display = "inline";
       moreText_desktop.style.display = "inline";
     }
-    else if(425 >= WindowWidth <= 1024){
+    else if(WindowWidth >= 426){
       dots_tablet.style.display = "none";
+      moreText_mobile.style.display = "inline";
       moreText_tablet.style.display = "inline";
+      moreText_desktop.style.display = "inline";
     }
-    else{
+    else if(WindowWidth <= 426){
       dots_mobile.style.display = "none";
       moreText_mobile.style.display = "inline";
+      moreText_tablet.style.display = "inline";
+      moreText_desktop.style.display = "inline";
     }   
 
   }
